@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Kalnia&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Kalnia&family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fond_feuille.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(0.4);
+}
+
+.background-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgb(24, 31, 29) 90%);
+
+    z-index: 1;
+}
+
+
+
+nav>ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: rgba(14, 22, 21, 0.637);
+
+    border-radius: 40px;
+}
+
+nav>ul>li {
+
+
+    list-style: none;
+    text-align: center;
+    white-space: nowrap;
+
+    color: #fff;
+    font-family: 'Kalnia', serif;
+
+
+    padding: 1em 2em;
+    margin: 1em 0px;
+
+    font-size: 1.3em;
+
+    min-width: 150px;
+
+}
+
+.active {
+    background-color: #21504a98;
+    border-radius: 20px;
+}
+
+.input {
+    font-family: 'Kalnia', serif;
+    z-index: 2;
+    position: absolute;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #142325;
+    box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.5), 0 0 0 0.15vw transparent;
+    border-radius: 100em;
+    border: none;
+    outline: none;
+    padding: 0.7vw;
+
+    min-width: 30vw;
+
+    transition: 0.4s;
+
+
+    left: 50%;
+    top: 23vh;
+    transform: translate(-50%, -50%);
+}
+
+
+.input:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 .15vw #4ac7b7;
+}
+
+/* titre */
+.nom,
+.slogan {
+    color: #fff;
+    /* reset */
+    margin: 0px;
+    padding: 0px;
+}
+
+.div_t {
+    position: absolute;
+    top: 35vh;
+    width: 100%;
+    text-align: center;
+    /* Center the text horizontally */
+}
+
+.nom {
+    font-family: 'Kalnia', serif;
+    font-size: 8em;
+}
+
+.slogan {
+
+    font-family: 'Kalnia', serif;
+    font-size: 2em;
+
+    padding: 2em;
+}
+
+green {
+    color: #4ac7b7
+}
+
+.bg {
+    background-color: #0a0c0c;
+    position: absolute;
+    height: 1200px;
+    width: 100%;
+    top: 875px;
+}
+
+.bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, #27474165 90%);
+
+    z-index: 1;
+}
+
+
+.titre_produit {
+    color: #fff;
+    position: absolute;
+    top: 1000px; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-family: 'Kalnia', serif;
+    font-size: 6em;
+
+
+}
+
+
+/* azfafzftazgfyuagfiufz */
+.list_produit {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the list horizontally */
+    align-items: center; /* Center the list vertically */
+
+    top: 80em;
+}
+
+.produit {
+    margin: 1.5em;
+}
+
+
+
+.card {
+    z-index: 50;
+    position: relative;
+    width: 320px;
+    height: 480px;
+    background: #191919;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #21504a;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card::after {
+    content: "4DPrint";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 5.5em;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    scale: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.card .contentBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.card .contentBox h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: -15px;
+    color: #000000;
+    text-decoration: none;
+    background: #4ac7b7;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+    top: 0;
+    opacity: 1;
+}
+
+.mouse {
+    height: 300px;
+    width: auto;
+}
