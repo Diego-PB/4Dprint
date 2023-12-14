@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #0a0c0c;
 }
 
 .background-container {
@@ -18,6 +19,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     filter: brightness(0.4);
+    z-index: 10;
 }
 
 .background-container::after {
@@ -29,7 +31,7 @@ body {
     height: 100%;
     background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgb(24, 31, 29) 90%);
 
-    z-index: 1;
+    z-index: 10;
 }
 
 
@@ -44,6 +46,7 @@ nav>ul {
     background-color: rgba(14, 22, 21, 0.637);
 
     border-radius: 40px;
+    z-index: 11;
 }
 
 nav>ul>li {
@@ -56,19 +59,20 @@ nav>ul>li {
     color: #fff;
     font-family: 'Kalnia', serif;
 
-
-    padding: 1em 2em;
-    margin: 1em 0px;
+    padding: 0.4em 2em;
+    margin: 0.5em 0px;
 
     font-size: 1.3em;
 
     min-width: 150px;
+    z-index: 11;
 
 }
 
 .active {
     background-color: #21504a98;
     border-radius: 20px;
+    z-index: 11;
 }
 
 .input {
@@ -91,8 +95,9 @@ nav>ul>li {
 
 
     left: 50%;
-    top: 23vh;
+    top: 11em;
     transform: translate(-50%, -50%);
+    z-index: 11;
 }
 
 
@@ -111,6 +116,7 @@ nav>ul>li {
     /* reset */
     margin: 0px;
     padding: 0px;
+    z-index: 11;
 }
 
 .div_t {
@@ -119,6 +125,7 @@ nav>ul>li {
     width: 100%;
     text-align: center;
     /* Center the text horizontally */
+    z-index: 11;
 }
 
 .nom {
@@ -141,9 +148,10 @@ green {
 .bg {
     background-color: #0a0c0c;
     position: absolute;
-    height: 1200px;
+    height: auto;
+    min-height: 800px;
     width: 100%;
-    top: 875px;
+    top: 1200px;
 }
 
 .bg::after {
@@ -153,7 +161,7 @@ green {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, #27474165 90%);
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 50%, #1d322f 90%);
 
     z-index: 1;
 }
@@ -162,11 +170,12 @@ green {
 .titre_produit {
     color: #fff;
     position: absolute;
-    top: 1000px; 
+    top: -3em; 
     left: 50%; 
     transform: translate(-50%, -50%);
     font-family: 'Kalnia', serif;
     font-size: 6em;
+    z-index: 11;
 
 
 }
@@ -181,7 +190,7 @@ green {
     justify-content: center; /* Center the list horizontally */
     align-items: center; /* Center the list vertically */
 
-    top: 80em;
+    top: 1em;
 }
 
 .produit {
