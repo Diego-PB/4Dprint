@@ -13,17 +13,10 @@ window.addEventListener('scroll', function() {
 });
 
 
-/* function redirigerSiPetiteFenetre() {
-    if (window.innerWidth < 1000) {
-        window.location.href = 'tel.html'; 
+window.onload = function() {
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+   
+    if (screenWidth < 1000) {
+       window.location.href = "tel.html";
     }
-}
-
-
-window.onload = redirigerSiPetiteFenetre;
-window.onresize = redirigerSiPetiteFenetre; */
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-
-   window.location.href = "tel.html";
-
-}
+   };
