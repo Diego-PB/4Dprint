@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Kalnia&family=Roboto&display=swap');
+*{font-family: 'Kalnia', serif;}
+body {
+    background-color: #343541;
+}
+
+.cookieCard {
+    border-radius: 20px;
+    width: 300px;
+    height: 320px;
+    background: linear-gradient(to right, #00c9a7, #3d5751);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    scale: 2;
+}
+
+  
+  .cookieCard::before {
+    width: 150px;
+    height: 150px;
+    content: "";
+    background: linear-gradient(to right, #00c9a7, #3d5751);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    right: -25%;
+    top: -25%;
+  }
+  
+  .cookieHeading {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(241, 241, 241);
+    z-index: 2;
+  }
+  
+  .cookieDescription {
+    font-size: 0.9em;
+    color: rgb(241, 241, 241);
+    z-index: 2;
+  }
+  
+  .cookieDescription a {
+    color: rgb(241, 241, 241);
+  }
+  
+  .acceptButton {
+    border-radius: 10px;
+    padding: 11px 30px;
+    
+    background-color: #343541;
+    transition-duration: .2s;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-weight: 600;
+    z-index: 2;
+    
+  }
+  
+  .acceptButton:hover {
+    background-color: #01c7a5;
+    transition-duration: .2s;
+  }
