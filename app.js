@@ -12,13 +12,18 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Fonction pour rediriger si la taille de la fenêtre est inférieure à 900 pixels
-function redirigerSiPetiteFenetre() {
-    if (window.innerWidth < 900) {
-        window.location.href = 'tel.html'; // Remplacez 'page.html' par le chemin de votre page de redirection
+
+/* function redirigerSiPetiteFenetre() {
+    if (window.innerWidth < 1000) {
+        window.location.href = 'tel.html'; 
     }
 }
 
-// Attacher la fonction au chargement de la page et au redimensionnement de la fenêtre
+
 window.onload = redirigerSiPetiteFenetre;
-window.onresize = redirigerSiPetiteFenetre;
+window.onresize = redirigerSiPetiteFenetre; */
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+   window.location.href = "tel.html";
+
+}
